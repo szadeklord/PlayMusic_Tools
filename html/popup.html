@@ -1,11 +1,27 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Play Music: Add to Library</title>
-    <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <title>Streamkeys</title>
+    <link type="text/css" rel="stylesheet" href="/css/material.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link type="text/css" rel="stylesheet" href="/css/popup.css">-->
+    <script type="text/javascript" src="/js/popup/popup.js"></script>
   </head>
   <body>
-    <h1>Play Music: Add to Library</h1>
-    <h2>Status:<span></span></h2>
+    <div class="header">
+      Play Music: Tools
+    </div>
+    <div id="player">
+      <div class="no-sites">
+        No music sites open.
+      </div>
+      <div class="site-tab-container"></div>
+      <button id="btn-disabled-sites" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        <span></span>
+        <i class="material-icons"></i>
+      </button>
+    </div>
   </body>
 </html>
