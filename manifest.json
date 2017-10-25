@@ -17,7 +17,7 @@
         "tabs"
     ],
     "commands": {
-      "playPause": {
+      "add_to_library": {
         "suggested_key": {
           "default": "Ctrl+Shift+L"
         },

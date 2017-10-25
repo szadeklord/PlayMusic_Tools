@@ -1,37 +1,27 @@
-// chrome.commands.onCommand.addListener(function(command) {
-  
-//   alert(command);
+chrome.commands.onCommand.addListener(function(command) {
 
-//   if (command == "activate_plugin")
-//   {
-//     add_to_library();
-//   }
-// });
+  if (command == "add_to_library")
+  {
+    add_to_library();
+  }
+});
 
-// function add_to_library()
-// {
-  
-  
-// }
- 
-var dispatchMouseEvent = function(target, var_args) {
-  var e = document.createEvent("MouseEvents");
-  // If you need clientX, clientY, etc., you can call
-  // initMouseEvent instead of initEvent
-  e.initEvent.apply(e, Array.prototype.slice.call(arguments, 1));
-  target.dispatchEvent(e);
-};
+function add_to_library()
+{
+  chrome.tabs.query({
+  },function(array_of_tabs){
+      for(var i = 0; i < array_of_tabs.length; i++)
+      {
+          if(array_of_tabs[i].url.indexOf("play.google.com") !== -1)
+          {
+                  // chrome.tabs.executeScript(tabs[i].id, {file: "background.js"});
+                  chrome.tabs.executeScript(array_of_tabs[i].id, {file:"js/add_to_library.js"});
+          }
+      }
+  });
+}
 
-var menu = document.querySelector("[data-id=now-playing-menu]");
 
-dispatchMouseEvent(menu, 'mouseover', true, true);
-dispatchMouseEvent(menu, 'mousedown', true, true);
-dispatchMouseEvent(menu, 'click', true, true);
-dispatchMouseEvent(menu, 'mouseup', true, true);
 
-var element = document.getElementById(":a");
 
-dispatchMouseEvent(element, 'mouseover', true, true);
-dispatchMouseEvent(element, 'mousedown', true, true);
-dispatchMouseEvent(element, 'click', true, true);
-dispatchMouseEvent(element, 'mouseup', true, true);
+
