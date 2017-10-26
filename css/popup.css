@@ -1,0 +1,73 @@
+html 
+{
+    padding: 0;
+    margin: 0;
+    min-height: 100px;
+    height: 0;
+}
+
+body 
+{
+    width: 290px;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.header 
+{
+    background-color: #FF8C00;
+    border-top: 1px solid #FF8C00;
+    height: 38px;
+    padding: 6px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-menu-container
+{
+    min-height: 60px;
+  
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mdl-button--colored 
+{
+    background-color: #f55831 !important;
+}
+
+.player-div-border 
+{
+    border-left: 1px solid #f55831;
+    border-right: 1px solid #f55831;
+}
+
+.music 
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#player 
+{
+    height: auto;
+    min-height: 30px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+#btn-add-library
+{
+    margin-top: 10px;
+    min-width: 203px;
+}
+

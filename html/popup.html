@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Streamkeys</title>
-    <link type="text/css" rel="stylesheet" href="/css/material.min.css">
+    <title>Play Music: Tools</title>
+    <!--Imported css/js-->
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--<link type="text/css" rel="stylesheet" href="/css/popup.css">-->
-    <script type="text/javascript" src="/js/popup/popup.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">  
+    <link type="text/css" rel="stylesheet" href="/css/material.min.css">
+    <script type="text/javascript" src="/js/material.min.js"></script>
+    <!--Custom css/js-->
+    <link type="text/css" rel="stylesheet" href="/css/popup.css">
+    <script type="text/javascript" src="/js/popup.js"></script>
   </head>
   <body>
     <div class="header">
       Play Music: Tools
     </div>
     <div id="player">
-      <div class="no-sites">
-        No music sites open.
+      <div class="music">
+        No music detected.
       </div>
-      <div class="site-tab-container"></div>
-      <button id="btn-disabled-sites" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-        <span></span>
+      <div class="btn-menu-container"></div>
+      <button id="btn-add-library" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        <span>Add to Library</span>
         <i class="material-icons"></i>
       </button>
     </div>
