@@ -4,9 +4,13 @@ Google Chrome extension to interface with Google Play Music in the web browser. 
 
 ## Install:
 
-* 1. Via Google Extension Store: [`here`][4]<br><br>
+Via:
 
-* 2. From source.
+1. Via Google Extension Store: [`here`][4]
+
+or
+
+2. From source.
     * Clone repo or download and extract zip
     * Open `chrome://extensions` in Google Chrome
     * Click `Load unpacked extensions...` and select the folder you created
