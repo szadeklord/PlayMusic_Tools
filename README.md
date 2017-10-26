@@ -2,6 +2,15 @@
 
 Google Chrome extension to interface with Google Play Music in the web browser. Namely adding currently playing song to "My Library"
 
+## Install:
+
+* 1. Via Google Extension Store: [`here`][4]<br><br>
+
+* 2. From source.
+    * Clone repo or download and extract zip
+    * Open `chrome://extensions` in Google Chrome
+    * Click `Load unpacked extensions...` and select the folder you created
+
 ## Info
 
 Play Music: Tools works by using javascript to mimick mouse clicks for the desired element in the Google Play Music web player.
@@ -31,3 +40,6 @@ https://www.flaticon.com/authors/vectors-market
 
 [3]:
 https://www.flaticon.com
+
+[4]:
+https://chrome.google.com/webstore/detail/play-music-tools/pjdmlkmcedbbbcbibaedjhbmcnnakohb
