@@ -1,5 +1,5 @@
-chrome.commands.onCommand.addListener(function(command) {
-
+chrome.commands.onCommand.addListener(function(command) 
+{
   if (command == "add_to_library")
   {
     add_to_library();
@@ -8,20 +8,17 @@ chrome.commands.onCommand.addListener(function(command) {
 
 function add_to_library()
 {
-  chrome.tabs.query({
-  },function(array_of_tabs){
-      for(var i = 0; i < array_of_tabs.length; i++)
-      {
-          if(array_of_tabs[i].url.indexOf("play.google.com") !== -1)
-          {
-                  // chrome.tabs.executeScript(tabs[i].id, {file: "background.js"});
-                  chrome.tabs.executeScript(array_of_tabs[i].id, {file:"js/add_to_library.js"});
-          }
-      }
-  });
+  loadjs("/js/search_tabs.js");
 }
 
+function loadjs(file) 
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = file;
 
+  document.body.appendChild(script);
+}
 
 
 

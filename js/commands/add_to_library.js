@@ -20,3 +20,4 @@ dispatchMouseEvent(element, 'mousedown', true, true);
 dispatchMouseEvent(element, 'click', true, true);
 dispatchMouseEvent(element, 'mouseup', true, true);
 
+
